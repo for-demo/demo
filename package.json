@@ -1,4 +1,5 @@
 {
+  "homepage": "https://for-demo.github.io/demo",
   "name": "vite-demo",
   "private": true,
   "version": "0.0.0",
@@ -6,13 +7,16 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview --port 8080"
+    "preview": "vite preview --port 8080",
+    "predepoly": "npm run build",
+    "depoly": "gh-pages -d dist"
   },
   "dependencies": {
     "vue": "^3.4.21"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
+    "gh-pages": "^6.1.1",
     "vite": "^5.2.0"
   }
 }
